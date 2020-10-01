@@ -1,33 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>My First Azure Static Web App</title>
-  <meta name="description" content="A sample Azure Static Web App">
-  <meta name="author" content="Jason Gaylord">
-  <style>
-      body { font-family: Arial, Helvetica, sans-serif; }
-      h2 { color: navy; }
-      div { padding: 5px; border: 1px solid #222; background-color: #ccc; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Hello, I am inside the folder</title>
 </head>
+
 <body>
-  <h2>Welcome</h2>
-  <div id="HelloMessage"></div>
-  <script>
-    var query = new URLSearchParams;
-    query.append("name", "Jason");
-    var url = "/api/welcome?" + query.toString() ;
-    
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    
-    xhr.onload = function(){
-      console.log("Done");
-      document.getElementById("HelloMessage").innerHTML = this.response;
-    };
-    
-    xhr.send();
-  </script>
+  <main>
+    <h1>HelloHello, I am inside the </h1>
+  </main>
+  
 </body>
+
 </html>
